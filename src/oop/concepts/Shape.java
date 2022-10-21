@@ -5,43 +5,49 @@ package oop.concepts;
 
 //import java.util.Scanner;
 
+import java.util.Scanner;
 
-public abstract class Shape {
 
+
+public abstract class Shape {    
     
- abstract  void  Area();
+ abstract public  double  Area();
     
 }
 
 class Circle extends Shape{
+     
+   
+    @Override
+public double  Area( ){
+ 
+      System.out.println("Enter radius"); 
+      Scanner s = new Scanner(System.in);
+      
+        double r = s.nextDouble();
+    double area = 3.14 * r*r;
+    return area;
+      
     
-    public int r ;
-
-    
-Circle(int r){
-
-    
-    this.r = r ;
-    
+    }
 }
-
-    public int getR() {
-        return r;
-    }
-
-    public void setR(int r) {
-        this.r = r;
-    }
-
-@Override
-    void Area(){
-                    double area = r * 3.14 *2;
-
-
-    
-
-    System.out.println(area);   
-
-    
-    }
+ class Square extends Shape{
+ 
+ @Override
+ public double Area(){
+     Scanner s1 = new Scanner(System.in);
+     System.out.println("Enter lenght"); 
+     System.out.println("Enter width");  
+     
+     double l = s1.nextDouble();
+     double w = s1.nextDouble();
+     
+     double area1 = l*w ;
+     return area1;
+ 
+ 
  }
+ 
+ }
+    
+ 

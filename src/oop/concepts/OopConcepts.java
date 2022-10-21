@@ -16,9 +16,14 @@ public class OopConcepts {
      */
     public static void main(String[] args) {
         
-        Shape c = new Circle(74);
-        
-        c.Area();
+        Circle c = new Circle();
+      
+      System.out.println("Area of the cicle is:"+c.Area());
+      
+      
+      Square g = new Square();
+      
+       System.out.println("Area of the cicle is:"+g.Area());
      }
     
 }
