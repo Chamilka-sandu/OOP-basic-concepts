@@ -1,5 +1,5 @@
 /*
- *example for Abstraction  
+ *example for Abstraction by using absract class  
  */
 package oop.concepts;
 
